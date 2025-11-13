@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AES" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AES加密" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zf-GN-TrK">
+                                <rect key="frame" x="162" y="100" width="69.333333333333314" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcY-QP-deG">
+                                <rect key="frame" x="303" y="90.666666666666671" width="60" height="40.000000000000014"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1PT-vR-L4F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="粘贴并加密">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="encrypPasteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1jW-gM-A9N"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fSF-wE-iFG">
+                                <rect key="frame" x="30" y="151" width="333" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="bdm-GY-2xw"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tYm-jN-67t"/>
+                                </connections>
+                            </textView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加密结果" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17D-21-Dcp">
+                                <rect key="frame" x="30" y="281" width="333" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AES解密" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C40-xc-sGo">
+                                <rect key="frame" x="162" y="431" width="69.333333333333314" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udx-HJ-ea7">
+                                <rect key="frame" x="303" y="421.66666666666669" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CpJ-Ag-Jr6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="粘贴并解密">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="decrypClearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNk-ei-U0U"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bh4-Qu-68v">
+                                <rect key="frame" x="30" y="482" width="333" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HMu-JE-AHb"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ZnX-v7-snw"/>
+                                </connections>
+                            </textView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="解密结果" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMB-D0-iMe">
+                                <rect key="frame" x="30" y="612" width="333" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Zf-GN-TrK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="618-nu-nqR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mMB-D0-iMe" secondAttribute="trailing" constant="30" id="7si-rg-ijE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="17D-21-Dcp" secondAttribute="trailing" constant="30" id="DPg-zL-Rrq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bh4-Qu-68v" secondAttribute="trailing" constant="30" id="EfP-SS-quK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="udx-HJ-ea7" secondAttribute="trailing" constant="30" id="Fl2-NA-ge1"/>
+                            <constraint firstItem="C40-xc-sGo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Js5-1z-9d0"/>
+                            <constraint firstItem="fSF-wE-iFG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="KgL-8b-nae"/>
+                            <constraint firstItem="C40-xc-sGo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="17D-21-Dcp" secondAttribute="bottom" constant="30" id="KxR-Ob-sZA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mMB-D0-iMe" secondAttribute="bottom" constant="30" id="NGS-te-beh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fSF-wE-iFG" secondAttribute="trailing" constant="30" id="Nuc-yY-20F"/>
+                            <constraint firstItem="4Zf-GN-TrK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="PGp-qb-PHW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UcY-QP-deG" secondAttribute="trailing" constant="30" id="R5E-Hk-xUR"/>
+                            <constraint firstItem="UcY-QP-deG" firstAttribute="centerY" secondItem="4Zf-GN-TrK" secondAttribute="centerY" id="g8o-Or-E1t"/>
+                            <constraint firstItem="17D-21-Dcp" firstAttribute="top" secondItem="fSF-wE-iFG" secondAttribute="bottom" constant="30" id="gR4-en-Zhd"/>
+                            <constraint firstItem="mMB-D0-iMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="h7D-pz-Qc6"/>
+                            <constraint firstItem="Bh4-Qu-68v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="imP-MF-r2y"/>
+                            <constraint firstItem="17D-21-Dcp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kgT-Uv-fco"/>
+                            <constraint firstItem="Bh4-Qu-68v" firstAttribute="top" secondItem="C40-xc-sGo" secondAttribute="bottom" constant="30" id="nLL-qp-kgJ"/>
+                            <constraint firstItem="mMB-D0-iMe" firstAttribute="top" secondItem="Bh4-Qu-68v" secondAttribute="bottom" constant="30" id="oFK-z0-clk"/>
+                            <constraint firstItem="udx-HJ-ea7" firstAttribute="centerY" secondItem="C40-xc-sGo" secondAttribute="centerY" id="pan-yU-lxS"/>
+                            <constraint firstItem="fSF-wE-iFG" firstAttribute="top" secondItem="4Zf-GN-TrK" secondAttribute="bottom" constant="30" id="rbr-hg-lw3"/>
+                            <constraint firstItem="C40-xc-sGo" firstAttribute="top" secondItem="fSF-wE-iFG" secondAttribute="bottom" constant="180" id="xHH-fz-gy8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="decrypLabel" destination="mMB-D0-iMe" id="LOL-fV-7pN"/>
+                        <outlet property="decrypText" destination="Bh4-Qu-68v" id="nW6-Zg-cir"/>
+                        <outlet property="encrypLabel" destination="17D-21-Dcp" id="pIc-eP-8LP"/>
+                        <outlet property="encrypText" destination="fSF-wE-iFG" id="Xsh-cZ-jeL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

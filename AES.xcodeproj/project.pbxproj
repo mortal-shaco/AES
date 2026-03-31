@@ -6,143 +6,118 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		8B7BBDBC2E0E858E00D358C9 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 8B7BBDBB2E0E858E00D358C9 /* Toast */; };
-/* End PBXBuildFile section */
+/* Begin PBXCopyFilesBuildPhase section */
+		8B9C6F1A2F7B520500A2B4D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8BFC592C2E0E42F500FB79F3 /* AES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9C6F1C2F7B520500A2B4D0 /* AES */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AES; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8BFC593E2E0E431200FB79F3 /* Exceptions for "AES" folder in "AES" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 8BFC592B2E0E42F500FB79F3 /* AES */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8BFC592E2E0E42F500FB79F3 /* AES */ = {
+		8B9C6F1E2F7B520500A2B4D0 /* AES */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				8BFC593E2E0E431200FB79F3 /* Exceptions for "AES" folder in "AES" target */,
-			);
 			path = AES;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8BFC59292E0E42F500FB79F3 /* Frameworks */ = {
+		8B9C6F192F7B520500A2B4D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B7BBDBC2E0E858E00D358C9 /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8BFC59232E0E42F400FB79F3 = {
+		8B9C6F132F7B520500A2B4D0 = {
 			isa = PBXGroup;
 			children = (
-				8BFC592E2E0E42F500FB79F3 /* AES */,
-				8BFC592D2E0E42F500FB79F3 /* Products */,
-				F550BDE0639A3F62F9461BCD /* Frameworks */,
+				8B9C6F1E2F7B520500A2B4D0 /* AES */,
+				8B9C6F1D2F7B520500A2B4D0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8BFC592D2E0E42F500FB79F3 /* Products */ = {
+		8B9C6F1D2F7B520500A2B4D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BFC592C2E0E42F500FB79F3 /* AES.app */,
+				8B9C6F1C2F7B520500A2B4D0 /* AES */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F550BDE0639A3F62F9461BCD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BFC592B2E0E42F500FB79F3 /* AES */ = {
+		8B9C6F1B2F7B520500A2B4D0 /* AES */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BFC593F2E0E431200FB79F3 /* Build configuration list for PBXNativeTarget "AES" */;
+			buildConfigurationList = 8B9C6F232F7B520500A2B4D0 /* Build configuration list for PBXNativeTarget "AES" */;
 			buildPhases = (
-				8BFC59282E0E42F500FB79F3 /* Sources */,
-				8BFC59292E0E42F500FB79F3 /* Frameworks */,
-				8BFC592A2E0E42F500FB79F3 /* Resources */,
+				8B9C6F182F7B520500A2B4D0 /* Sources */,
+				8B9C6F192F7B520500A2B4D0 /* Frameworks */,
+				8B9C6F1A2F7B520500A2B4D0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8BFC592E2E0E42F500FB79F3 /* AES */,
+				8B9C6F1E2F7B520500A2B4D0 /* AES */,
 			);
 			name = AES;
+			packageProductDependencies = (
+			);
 			productName = AES;
-			productReference = 8BFC592C2E0E42F500FB79F3 /* AES.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 8B9C6F1C2F7B520500A2B4D0 /* AES */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8BFC59242E0E42F400FB79F3 /* Project object */ = {
+		8B9C6F142F7B520500A2B4D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
-					8BFC592B2E0E42F500FB79F3 = {
-						CreatedOnToolsVersion = 16.4;
+					8B9C6F1B2F7B520500A2B4D0 = {
+						CreatedOnToolsVersion = 26.4;
 					};
 				};
 			};
-			buildConfigurationList = 8BFC59272E0E42F400FB79F3 /* Build configuration list for PBXProject "AES" */;
+			buildConfigurationList = 8B9C6F172F7B520500A2B4D0 /* Build configuration list for PBXProject "AES" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 8BFC59232E0E42F400FB79F3;
+			mainGroup = 8B9C6F132F7B520500A2B4D0;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				8B7BBDBA2E0E858E00D358C9 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 8BFC592D2E0E42F500FB79F3 /* Products */;
+			productRefGroup = 8B9C6F1D2F7B520500A2B4D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BFC592B2E0E42F500FB79F3 /* AES */,
+				8B9C6F1B2F7B520500A2B4D0 /* AES */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		8BFC592A2E0E42F500FB79F3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		8BFC59282E0E42F500FB79F3 /* Sources */ = {
+		8B9C6F182F7B520500A2B4D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -152,63 +127,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8BFC59402E0E431200FB79F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5SMBZ935SQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AES/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rnt.AES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		8BFC59412E0E431200FB79F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5SMBZ935SQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AES/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rnt.AES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		8BFC59422E0E431200FB79F3 /* Debug */ = {
+		8B9C6F212F7B520500A2B4D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +162,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 5SMBZ935SQ;
+				DEVELOPMENT_TEAM = 5854GZHG9U;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -261,18 +180,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		8BFC59432E0E431200FB79F3 /* Release */ = {
+		8B9C6F222F7B520500A2B4D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -307,7 +226,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 5SMBZ935SQ;
+				DEVELOPMENT_TEAM = 5854GZHG9U;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -319,57 +238,63 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B9C6F242F7B520500A2B4D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5854GZHG9U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8B9C6F252F7B520500A2B4D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5854GZHG9U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BFC59272E0E42F400FB79F3 /* Build configuration list for PBXProject "AES" */ = {
+		8B9C6F172F7B520500A2B4D0 /* Build configuration list for PBXProject "AES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BFC59422E0E431200FB79F3 /* Debug */,
-				8BFC59432E0E431200FB79F3 /* Release */,
+				8B9C6F212F7B520500A2B4D0 /* Debug */,
+				8B9C6F222F7B520500A2B4D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BFC593F2E0E431200FB79F3 /* Build configuration list for PBXNativeTarget "AES" */ = {
+		8B9C6F232F7B520500A2B4D0 /* Build configuration list for PBXNativeTarget "AES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BFC59402E0E431200FB79F3 /* Debug */,
-				8BFC59412E0E431200FB79F3 /* Release */,
+				8B9C6F242F7B520500A2B4D0 /* Debug */,
+				8B9C6F252F7B520500A2B4D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		8B7BBDBA2E0E858E00D358C9 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scalessec/Toast-Swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8B7BBDBB2E0E858E00D358C9 /* Toast */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8B7BBDBA2E0E858E00D358C9 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
-			productName = Toast;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 8BFC59242E0E42F400FB79F3 /* Project object */;
+	rootObject = 8B9C6F142F7B520500A2B4D0 /* Project object */;
 }
